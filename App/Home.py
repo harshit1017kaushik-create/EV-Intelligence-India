@@ -219,11 +219,22 @@ with col1:
         "Explore annual growth, monthly registration "
         "trends and changes in India's EV market."
     )
+    st.page_link(
+        "pages/1_EV_Market.py",
+        label="Open EV Market Analysis",
+        icon="📈"
+    )
 
+    st.markdown(" ")
     st.subheader("🗺️ State-Wise Analysis")
     st.write(
         "Compare EV registrations and charging "
         "infrastructure across Indian states."
+    )
+    st.page_link(
+        "pages/3_State_Analysis.py",
+        label="Open State-Wise Analysis",
+        icon="🗺️"
     )
 
 with col2:
@@ -232,11 +243,22 @@ with col2:
         "Analyze charging station distribution, "
         "operators, ownership and power categories."
     )
+    st.page_link(
+        "pages/2_Charging_Infrastructure.py",
+        label="Open Charging Infrastructure",
+        icon="🔌"
+    )
 
+    st.markdown(" ")
     st.subheader("🔮 EV Registration Forecast")
     st.write(
         "Explore historical registration patterns "
         "and the experimental six-month forecast."
+    )
+    st.page_link(
+        "pages/4_EV_Forecast.py",
+        label="Open EV Registration Forecast",
+        icon="🔮"
     )
 
 
