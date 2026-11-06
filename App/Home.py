@@ -200,6 +200,7 @@ with col4:
     )
 
 
+
 # --------------------------------------------------
 # PROJECT MODULES
 # --------------------------------------------------
@@ -219,23 +220,20 @@ with col1:
         "Explore annual growth, monthly registration "
         "trends and changes in India's EV market."
     )
-    st.page_link(
-        "pages/1_EV_Market.py",
-        label="Open EV Market Analysis",
-        icon="📈"
-    )
 
-    st.markdown(" ")
+    if st.button("Open EV Market →", key="home_ev_market",
+                 use_container_width=True):
+        st.switch_page("pages/1_EV_Market.py")
+
     st.subheader("🗺️ State-Wise Analysis")
     st.write(
         "Compare EV registrations and charging "
         "infrastructure across Indian states."
     )
-    st.page_link(
-        "pages/3_State_Analysis.py",
-        label="Open State-Wise Analysis",
-        icon="🗺️"
-    )
+
+    if st.button("Open State Analysis →", key="home_state",
+                 use_container_width=True):
+        st.switch_page("pages/3_State_Analysis.py")
 
 with col2:
     st.subheader("🔌 Charging Infrastructure")
@@ -243,23 +241,21 @@ with col2:
         "Analyze charging station distribution, "
         "operators, ownership and power categories."
     )
-    st.page_link(
-        "pages/2_Charging_Infrastructure.py",
-        label="Open Charging Infrastructure",
-        icon="🔌"
-    )
 
-    st.markdown(" ")
+    if st.button("Open Charging Infrastructure →",
+                 key="home_charging",
+                 use_container_width=True):
+        st.switch_page("pages/2_Charging_Infrastructure.py")
+
     st.subheader("🔮 EV Registration Forecast")
     st.write(
         "Explore historical registration patterns "
         "and the experimental six-month forecast."
     )
-    st.page_link(
-        "pages/4_EV_Forecast.py",
-        label="Open EV Registration Forecast",
-        icon="🔮"
-    )
+
+    if st.button("Open EV Forecast →", key="home_forecast",
+                 use_container_width=True):
+        st.switch_page("pages/4_EV_Forecast.py")
 
 
 # --------------------------------------------------
